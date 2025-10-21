@@ -1,6 +1,6 @@
 """
 layout detection create a predictor
-Author: yushilin@baidu.com
+Author: 1329239119@qq.com
 """
 
 from detectron2.config import instantiate

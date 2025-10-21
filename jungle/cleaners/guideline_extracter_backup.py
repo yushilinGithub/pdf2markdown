@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 """
 extract mete data from guideline
-@author: yushilin@baidu.com
+@author: 1329239119@qq.com
 
 usage:
     

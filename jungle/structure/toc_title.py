@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 get title from pdf metadata
-Author: yushilin@baidu.com
+Author: 1329239119@qq.com
 """
 
 import difflib

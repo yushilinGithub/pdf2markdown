@@ -8,7 +8,7 @@
 """
 convert list of elements to tree.
 
-Authors: yushilin(yushilin@baidu.com)
+Authors: yushilin(1329239119@qq.com)
 Date:    2024/07/29 17:08:41
 """
 from src.jungle.structure.attr_norm import AttrNorm

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 """
-@Author: yushilin@baidu.com
+@Author: 1329239119@qq.com
 title level recognition
 """
 

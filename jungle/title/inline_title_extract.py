@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 从段落中提取包含在段落中的标题
-@author: yushilin@baidu.com 
+@author: 1329239119@qq.com 
 """
 import re
 import json

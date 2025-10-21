@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-@author: yushilin@baidu.com
+@author: 1329239119@qq.com
 package init file
 """
 
