@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+################################################################################
+#
+# Copyright (c) 2024 Baidu.com, Inc. All Rights Reserved
+#
+################################################################################
+"""
+language utilities.
+
+Authors: yushilin(yushilin@baidu.com)
+Date:    2024/07/29 17:08:41
+"""
+
+
+from typing import List
+from src.rock.languages import LANGUAGE_TO_CODE, CODE_TO_LANGUAGE
+
+
+def replace_lang_with_code(langs: List[str]):
+    """replace lang with code"""
+    for i in range(len(langs)):
+        if langs[i].title() in LANGUAGE_TO_CODE:
+            langs[i] = LANGUAGE_TO_CODE[langs[i].title()]
+        if langs[i] not in CODE_TO_LANGUAGE:
+            raise ValueError(f"Language code {langs[i]} not found.")
+
+
+def get_unique_langs(langs: List[List[str]]):
+    """get unique langs"""
+    uniques = []
+    for lang_list in langs:
+        for lang in lang_list:
+            if lang not in uniques:
+                uniques.append(lang)
+    return uniques

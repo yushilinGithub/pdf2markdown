@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+################################################################################
+#
+# Copyright (c) 2024 Baidu.com, Inc. All Rights Reserved
+#
+################################################################################
+"""
+run files offline.
+
+Authors: yushilin(yushilin@baidu.com)
+Date:    2024/07/29 17:08:41
+"""
+
+from src.jungle.convert import convert_single_pdf
+from src.jungle.logger import configure_logging
+from src.jungle.models import load_all_models
+from src.jungle.cleaners.ner import JiebaSeg, SpacyEngSeg, parse_doc_labels
+import argparse
+
+if __name__ == "__main__":
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input_file", type=str)
+    args = parser.parse_args()
+    model_lst = load_all_models()
+
+    structure, language, knowledge_type = convert_single_pdf(args.input_file, model_lst)
+    print(structure.to_markdown())

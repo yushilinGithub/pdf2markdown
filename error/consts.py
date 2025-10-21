@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding:utf-8 -*-
+"""
+common error
+"""
+
+RETRYABLE_ERROR_CODES = {
+    5000, # DOWNSTREAM_ERROR
+    5003, # INNER ERROR	
+    5006, # FLOW_CONTROL_ERROR	
+    5007, # RAL_ERROR
+    5008, # RAL_HTTP_ERROR
+    5009, # CALCULATION_ERROR
+    5011, # RES_DATA_ERROR
+    5015, # ASYNC_QUEUE_FULL
+    5017  # ASYNC_EXECUTE_TIMEOUT
+}
