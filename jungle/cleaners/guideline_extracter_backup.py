@@ -175,7 +175,7 @@ class GuidelineExtracter(object):
         }
         
         # 发送 POST 请求
-        response = requests.post("http://yq02-sys-rpm04560a27.yq02.baidu.com:5000/generate", json=data)
+        response = requests.post("http://yq02-sys-rpm04560a27.yq02.:5000/generate", json=data)
         response_data = json.loads(response.text)
         generated_text = response_data['generated_text'].strip()
         if generated_text == "是":
@@ -196,7 +196,7 @@ class GuidelineExtracter(object):
         }
         
         # 发送 POST 请求
-        response = requests.post("http://yq02-sys-rpm04560a27.yq02.baidu.com:5000/generate", json=data)
+        response = requests.post("http://yq02-sys-rpm04560a27.yq02.:5000/generate", json=data)
         response_data = json.loads(response.text)
         generated_text = response_data['generated_text'].strip()
         if generated_text == "是":

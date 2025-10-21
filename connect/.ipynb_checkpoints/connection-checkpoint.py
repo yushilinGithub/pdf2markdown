@@ -1,10 +1,10 @@
 #!/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2021 Baidu.com, Inc. All Rights Reserved
+Copyright (c) 2021 , Inc. All Rights Reserved
 This module provide configure file management service in i18n environment.
 
-Authors: lijunfeng(lijunfeng01@baidu.com)
+Authors: lijunfeng(lijunfeng01@)
 Date: 2021/10/21 14:54:06
 """
 from psycopg2.extras import NamedTupleCursor
